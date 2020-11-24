@@ -21,12 +21,25 @@ html {
 	background: var(--bg-color);
 }
 
+
 #main_wrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	width: 100vw;
+	height: 100vh;
+
+	/* filter: blur(8px); TODO: Add blurr */
+	/* -webkit-filter: blur(8px); */
+
+	background: var(--bg-color);
+	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
 
 #main_wrapper header {}
 
@@ -39,6 +52,10 @@ html {
 }
 
 #main_wrapper header nav ul li { margin: 0 1rem 0 1rem; }
+#main_wrapper header nav ul li a {
+	font-size: 1.9rem;
+}
+
 
 #main_wrapper section {}
 
