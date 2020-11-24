@@ -1,6 +1,9 @@
 :root {
 	--bg-color: #fefefe; /* Default text color */
 	--txt-color: #151515; /* Default background color */
+
+	--button-color: #212121;
+	--button-hover-color: #a1a1a1;
 }
 
 * {
@@ -8,6 +11,9 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Ubuntu Mono", "Overpass Mono", sans-serif;
+	/* Because IE does not have support for variables :/ */
+	color: #151515;
+	background: #fefefe;
 }
 
 html {
@@ -40,11 +46,11 @@ html {
 /* Classes */
 
 .button {
-	color: #151515;
+	color: var(--button-color);
 	text-decoration: none;
-	transition-duration: 0.8s;
+	transition-duration: var(--button-trans-duration);
 }
 
 .button:hover {
-	color: #f00;
+	color: var(--button-hover-color);
 }
