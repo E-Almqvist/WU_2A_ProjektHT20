@@ -1,9 +1,9 @@
 :root {
-	--bg-color: #151515e1; /* Default text color */
-	--txt-color: #fefefe; /* Default background color */
+	--bg-color: #fefefee1; /* Default text color */
+	--txt-color: #151515; /* Default background color */
 
-	--button-color: #fff;
-	--button-hover-color: #eee;
+	--button-color: #151515;
+	--button-hover-color: #151515aa;
 }
 
 * {
@@ -12,14 +12,17 @@
 	box-sizing: border-box;
 	font-family: "Ubuntu Mono", "Overpass Mono", sans-serif;
 
-	/* Because IE does not have support for variables :/ */
-	color: #fefefe;
-	background: #151515e1;
+	color: #151515;
+	color: var(--txt-color);
+	background: #fefefee1; /* NOTE: Fallbacks are needed because IE does not have support for variables... */
+	background: var(--bg-color);
 }
 
 html {
 	color: var(--txt-color);
 	background: var(--bg-color);
+	width: 100vw;
+	min-height: 100vh;
 }
 
 
@@ -42,16 +45,31 @@ html {
 }
 
 
-#main_wrapper header {}
+header {
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: center; */
+	/* align-items: center; */
+}
 
-#main_wrapper header nav ul {
+header #header_logo {
+	/* align-self: flex-start; */
+}
+
+header nav {
+	/* align-self: flex-end; */
+	width: max-content;
+	margin: auto 1rem auto auto;
+}
+
+header nav ul {
 	justify-content: center;
 	align-items: center;
 	list-style: none;
 }
 
-#main_wrapper header nav ul li { margin: 0 1rem 0 1rem; }
-#main_wrapper header nav ul li a {
+header nav ul li { margin: 0 1rem 0 1rem; }
+header nav ul li a {
 	font-size: 1.9rem;
 }
 
