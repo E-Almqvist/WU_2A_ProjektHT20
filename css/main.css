@@ -5,6 +5,11 @@
 	font-family: "Ubuntu Mono", "Overpass Mono", sans-serif;
 }
 
+html {
+	color: #151515; /* Default text color */
+	background: #fefefe; /* Background color  */
+}
+
 #main_wrapper {
 	display: flex;
 	flex-direction: row;
