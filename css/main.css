@@ -48,7 +48,7 @@ html {
 .button {
 	color: var(--button-color);
 	text-decoration: none;
-	transition-duration: var(--button-trans-duration);
+	transition-duration: 0.5s;
 }
 
 .button:hover {
