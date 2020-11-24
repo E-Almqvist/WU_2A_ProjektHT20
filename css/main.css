@@ -32,7 +32,7 @@ html {
 	width: 100vw;
 	height: 100vh;
 
-	/* filter: blur(8px); TODO: Add blurr */
+	/* filter: blur(8px); TODO: Add blur */
 	/* -webkit-filter: blur(8px); */
 
 	background: var(--bg-color);
@@ -45,8 +45,6 @@ html {
 #main_wrapper header {}
 
 #main_wrapper header nav ul {
-	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 	list-style: none;
@@ -68,10 +66,7 @@ html {
 	text-decoration: none;
 	transition-duration: 0.5s;
 }
-
-.button:hover {
-	color: var(--button-hover-color);
-}
+.button:hover { color: var(--button-hover-color); }
 
 
 .navlist {
