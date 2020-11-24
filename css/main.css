@@ -1,3 +1,8 @@
+:root {
+	--bg-color: #fefefe; /* Default text color */
+	--txt-color: #151515; /* Default background color */
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -6,16 +11,40 @@
 }
 
 html {
-	color: #151515; /* Default text color */
-	background: #fefefe; /* Background color  */
+	color: var(--txt-color);
+	background: var(--bg-color);
 }
 
 #main_wrapper {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
 #main_wrapper header {}
+
+#main_wrapper header nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+#main_wrapper header nav ul li { margin: 0 1rem 0 1rem; }
+
 #main_wrapper section {}
+
+
+/* Classes */
+
+.button {
+	color: #151515;
+	text-decoration: none;
+	transition-duration: 0.8s;
+}
+
+.button:hover {
+	color: #f00;
+}
