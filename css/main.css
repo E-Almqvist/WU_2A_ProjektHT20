@@ -1,9 +1,9 @@
 :root {
-	--bg-color: #fefefe; /* Default text color */
-	--txt-color: #151515; /* Default background color */
+	--bg-color: #151515e1; /* Default text color */
+	--txt-color: #fefefe; /* Default background color */
 
-	--button-color: #212121;
-	--button-hover-color: #a1a1a1;
+	--button-color: #fff;
+	--button-hover-color: #eee;
 }
 
 * {
@@ -11,9 +11,10 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Ubuntu Mono", "Overpass Mono", sans-serif;
+
 	/* Because IE does not have support for variables :/ */
-	color: #151515;
-	background: #fefefe;
+	color: #fefefe;
+	background: #151515e1;
 }
 
 html {
@@ -71,3 +72,11 @@ html {
 .button:hover {
 	color: var(--button-hover-color);
 }
+
+
+.navlist {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+}
+.navlist li { text-decoration: none; }
