@@ -26,8 +26,10 @@ html {
 }
 
 
+.flex_wrapper { display: flex; }
+.grid_wrapper { display: grid; }
+
 #main_wrapper {
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
