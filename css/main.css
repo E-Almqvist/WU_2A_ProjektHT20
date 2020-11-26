@@ -32,8 +32,8 @@ html {
 	justify-content: center;
 	align-items: center;
 
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 
 	/* filter: blur(8px); TODO: Add blur */
 	/* -webkit-filter: blur(8px); */
