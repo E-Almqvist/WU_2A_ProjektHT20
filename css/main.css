@@ -2,6 +2,7 @@
 	--bg-color: #fefefe; /* Default background color */
 	--bg-color-transparent: #fefefee1;
 	--txt-color: #151515; /* Default text color */
+	--txt-color-transparent: #151515e1;
 	--txt-color-invert: #fefefe;
 
 	--border-color: #e1e1e1;
@@ -73,7 +74,6 @@ header nav ul li a {
 	font-size: 1.5rem;
 }
 
-
 #main_wrapper {
 	flex-direction: column;
 	justify-content: start;
@@ -91,6 +91,9 @@ header nav ul li a {
 	background-size: cover;
 }
 
+
+
+
 #mainpage {
 	display: flex;
 	flex-direction: column;
@@ -102,7 +105,7 @@ header nav ul li a {
 #mainpage .content_container {
 	background: #fefefee1;
 	background: var(--bg-color-transparent);
-	padding: 2rem;
+	padding: 1.25rem;
 	border: solid var(--border-color-transparent) 4px;
 }
 
@@ -112,8 +115,12 @@ header nav ul li a {
 
 #mainpage .content_container #bashinputtxt {
 	font-size: 1.85rem;
-	color: red;
+	color: #43de4f;
 }
+#bashinputtxt #bashcolon	{ color: var(--txt-color-transparent); }
+#bashinputtxt #bashthing	{ color: #429edb; }
+#bashinputtxt #bashdollar	{ color: var(--txt-color-transparent); }
+
 
 #mainpage .content_container ul {
 	justify-content: center;
