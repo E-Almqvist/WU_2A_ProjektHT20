@@ -1,6 +1,7 @@
 :root {
-	--bg-color: #fefefe; /* Default text color */
-	--txt-color: #151515; /* Default background color */
+	--bg-color: #fefefe; /* Default background color */
+	--txt-color: #151515; /* Default text color */
+	--txt-color-invert: #fefefe;
 
 	--button-color: #151515;
 	--button-hover-color: #151515aa;
@@ -33,9 +34,39 @@ body {
 	height: 100%;
 }
 
+header {
+	display: flex; 
+	flex-direction: row; 
+	justify-content: center; 
+	align-items: center; 
+	width: 100%;
+	align-self: flex-start;
+	background: #fefefe;
+	background: var(--bg-color);
+}
 
-.flex_wrapper { display: flex; }
-.grid_wrapper { display: grid; }
+header #header_logo {
+	width: 4rem;
+	height: auto;
+	margin: auto auto auto 2rem;	
+}
+
+header nav {
+	width: max-content;
+	margin: auto 2rem auto auto;
+}
+
+header nav ul {
+	justify-content: center;
+	align-items: center;
+	list-style: none;
+}
+
+header nav ul li { margin: 0 1rem 0 1rem; }
+header nav ul li a {
+	font-size: 1.5rem;
+}
+
 
 #main_wrapper {
 	flex-direction: column;
@@ -59,45 +90,18 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
 }
 
-header {
-	display: flex; 
-	flex-direction: row; 
-	justify-content: center; 
-	align-items: center; 
-	width: 100%;
-	align-self: flex-start;
-	background: #fefefe;
-	background: var(--bg-color);
-}
 
-header #header_logo {
-	/* align-self: flex-start; */
-}
-
-header nav {
-	/* align-self: flex-end; */
-	width: max-content;
-	margin: auto 1rem auto auto;
-}
-
-header nav ul {
-	justify-content: center;
-	align-items: center;
-	list-style: none;
-}
-
-header nav ul li { margin: 0 1rem 0 1rem; }
-header nav ul li a {
-	font-size: 1.9rem;
-}
 
 
 #main_wrapper section {}
 
 
 /* Classes */
+.flex_wrapper { display: flex; }
+.grid_wrapper { display: grid; }
 
 .button {
 	color: var(--button-color);
