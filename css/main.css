@@ -1,5 +1,5 @@
 :root {
-	--bg-color: #fefefee1; /* Default text color */
+	--bg-color: #fefefe; /* Default text color */
 	--txt-color: #151515; /* Default background color */
 
 	--button-color: #151515;
@@ -14,12 +14,15 @@
 
 	color: #151515;
 	color: var(--txt-color);
-	background: #fefefee1; /* NOTE: Fallbacks are needed because IE does not have support for variables... */
-	background: var(--bg-color);
+	/*
+	background: #fefefee1; 
+	background: var(--bg-color);*/
 }
 
 html {
+	color: #151515;
 	color: var(--txt-color);
+	background: #fefefee1;
 	background: var(--bg-color);
 	width: 100%;
 	height: 100%;
@@ -59,12 +62,14 @@ body {
 }
 
 header {
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* justify-content: center; */
-	/* align-items: center; */
+	display: flex; 
+	flex-direction: row; 
+	justify-content: center; 
+	align-items: center; 
 	width: 100%;
 	align-self: flex-start;
+	background: #fefefe;
+	background: var(--bg-color);
 }
 
 header #header_logo {
