@@ -40,12 +40,13 @@ body {
 }
 
 header {
+	margin: 0.5rem auto 0 auto;
 	padding: 0.25rem 1rem;
 	display: flex; 
 	flex-direction: row; 
 	justify-content: center; 
 	align-items: center; 
-	width: 100%;
+	width: 97%;
 	align-self: flex-start;
 	background: #fefefe;
 	background: var(--bg-color);
