@@ -1,7 +1,11 @@
 :root {
 	--bg-color: #fefefe; /* Default background color */
+	--bg-color-transparent: #fefefee1;
 	--txt-color: #151515; /* Default text color */
 	--txt-color-invert: #fefefe;
+
+	--border-color: #e1e1e1;
+	--border-color-transparent: #e1e1e1e1; 
 
 	--button-color: #151515;
 	--button-hover-color: #151515aa;
@@ -35,6 +39,7 @@ body {
 }
 
 header {
+	padding: 0.25rem 1rem;
 	display: flex; 
 	flex-direction: row; 
 	justify-content: center; 
@@ -43,6 +48,7 @@ header {
 	align-self: flex-start;
 	background: #fefefe;
 	background: var(--bg-color);
+	border: solid var(--border-color-transparent) 0.25rem;
 }
 
 header #header_logo {
@@ -85,7 +91,7 @@ header nav ul li a {
 	background-size: cover;
 }
 
-#main_wrapper #mainpage {
+#mainpage {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -93,10 +99,34 @@ header nav ul li a {
 	height: 100%;
 }
 
+#mainpage .content_container {
+	background: #fefefee1;
+	background: var(--bg-color-transparent);
+	padding: 2rem;
+	border: solid var(--border-color-transparent) 4px;
+}
+
+#mainpage .content_container #website_slogan {
+	font-size: 2.2rem;
+}
+
+#mainpage .content_container #bashinputtxt {
+	font-size: 1.85rem;
+	color: red;
+}
+
+#mainpage .content_container ul {
+	justify-content: center;
+	align-items: center;
+}
+
+#mainpage .content_container ul li { 
+	font-size: 1.8rem;
+	margin-top: 0.6rem;
+	margin-right: 0.4rem; 
+}
 
 
-
-#main_wrapper section {}
 
 
 /* Classes */
