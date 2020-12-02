@@ -142,11 +142,25 @@ header nav ul li a {
 .grid_wrapper { display: grid; }
 
 .button {
+	color: #151515;
 	color: var(--button-color);
 	text-decoration: none;
 	transition-duration: 0.5s;
 }
-.button:hover { color: var(--button-hover-color); }
+.button:hover {
+	color: #1515158a;
+	color: var(--button-hover-color);
+}
+
+.bashbutton {
+	color: #010000;
+	font-size: 2.25rem;
+	border: solid #000 2px;
+	padding: 0 0.25rem;
+}
+.bashbutton:hover {
+	border: solid #888 2px;
+}
 
 
 .navlist {
