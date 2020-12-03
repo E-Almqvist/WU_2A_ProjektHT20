@@ -39,17 +39,16 @@ body {
 }
 
 header {
-	margin: 0.5rem auto 0 auto;
 	padding: 0.25rem 1rem;
 	display: flex; 
 	flex-direction: row; 
 	justify-content: center; 
 	align-items: center; 
-	width: 97%;
+	width: 100%;
 	align-self: flex-start;
 	background: #fefefe;
 	background: var(--bg-color);
-	border: solid var(--border-color-transparent) 0.2rem;
+	border-bottom: solid var(--border-color-transparent) 0.2rem;
 }
 
 header #header_logo {
@@ -103,8 +102,9 @@ header nav ul li a {
 }
 
 #mainpage .content_container {
-	background: #fefefee1;
-	background: var(--bg-color-transparent);
+	border-radius: 5px;
+	background: #fefefe;
+	background: var(--bg-color);
 	padding: 1.25rem;
 	padding-top: 0.6rem;
 	border: solid var(--border-color-transparent) 4px;
@@ -127,7 +127,7 @@ header nav ul li a {
 }
 
 #mainpage .content_container ul li { 
-	margin-bottom: 0.6rem;
+	margin-top: 0.6rem;
 	margin-right: 0.4rem; 
 }
 #mainpage .content_container ul li a { font-size: 2rem; }
