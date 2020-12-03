@@ -47,7 +47,7 @@ header {
 	align-items: center; 
 	width: 100%;
 	align-self: flex-start;
-	background: linear-gradient(#eeec, #fefefa);
+	background: linear-gradient(#eeef, #fefefa);
 	backdrop-filter: blur(8px);
 	border-bottom: solid var(--border-color-transparent) 0.25rem;
 }
@@ -88,6 +88,7 @@ header nav ul li a {
 	background-image: url("../img/background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: top;
 }
 
 
