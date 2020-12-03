@@ -133,10 +133,23 @@
 		
 		<h3>Lektioner vecka 49</h3>
 		<!-- Fyll på med dokumentation här. -->
-		<h4>2020-12-03</h4>
+		<h4>2020-12-03 (Under & efter lektion)</h4>
 		Idag har jag stylat hemsidan lite mera. Gjorade så att "terminalen" är lite avrundad. Jag lade också till en ny "terminal" med kontakt info. Gjorde ett litet skämt där klagomål skickas till en mail som inte kommer läsas. Jag gav headern enbart en botten border så att det såg bättre ut. Jag lade också till en blurrig backdrop till terminalerna samt headern. Det fungerar sådär på Firefox så man behöver enabla några saker själv i webbläsarens inställningar (går inte att göra detta med javascript). Jag lade också till en "bashcursor", alltså en pekare till terminalen där texten kommer att skrivas.
+		<br>
 		Stötte på ett problem med headers nav och mitten naven (den i terminalen). Då de båda är samma hamnade jag i ett dilemma om vilken jag skulle ta bort. Men jag valde att ha kvar båda då det set bäst ut. Naven i terminalen är bara  för att visa upp medans kanske någon stressad kund som går in på hemsidan och vill snabbt boka något så kan headerns nav vara bra att ha kvar. Det är muskelminne att leta först i headern för en nav. Behöver nog jobba på de andra sidorna nu.
-
+		<br>
+		Jag jobbade vidare på terminalen. Gjorde ett script så när man hovrar över en nav knapp så kommer text att "skrivas" ovanför i terminal inputen. Gjorde först så att texten sakta skrivs ut och när man flyttar ut muspekaren från knappen så försvinner det direkt. Experimenterade med att ta bort max-indexet på stringen genom att skapa en variable för ändringen i index per iteration. Detta fungerar sådär. När man väl har flyttat musen flera gånger så kommer skrivtiden att minska. Tillslut kommer texten vara där inom 0 sec. Fixade det med att göra > istället för ett >= men det skapar andra buggar. Så jag gick tillbaka till orginalet. Men detta är ett perfekt exempel på "this bug is now a feature" då det är lite coolare att det skrivs ut snabbare om man har hovrat över knapparna många gånger. Användaren kanske blir trött på att vänta på texten? (man kan fortfarande bara klicka på knappen även om texten inte är där än). Har också en idè på att skapa window-knappar för terminalen så att den ser ut som en terminal. Kan nog använda några open-source GTK ikoner :)
+		<br>
+		Jag bytte också bakgrundbild till någon bra jag hittade på <a href="https://unsplash.com/photos/SmAiLn-nnJg">unsplash.com</a>. Jag tycker den passar bra. Såhär ser hemsidan ut idag:
+		<img class="webimg" src="img/website_2020-12-03.png" alt="Website at 2020-12-03">
+		<br>
+		Jag påbörjade också meny sidan. Valde att göra ett grid layout för den då inget behövs centereras som index.html. Kommer dock att ha flex-wrappers i båda rutorna. Kanske en grid i mat-item-preview:en.
+		<br>
+		Såhär ser den ut:
+		<br>
+		<img class="webimg" src="img/website_2020-12-03_menu.png" alt="Menu: Website at 2020-12-03">
+		<br>
+		<strong>Se också git logsen & commitsen för ännu mer info :)</strong>
 		<h3>Lektioner vecka 50</h3>
 		<!-- Fyll på med dokumentation här. -->
 
