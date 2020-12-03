@@ -16,11 +16,13 @@ function updateBashText() {
     }
 }
 
-for (btn of bashButtons) {
-    console.log(btn);
+for ( let i = 0; i<bashButtons.length; i++ ) {
+    let btn = bashButtons[i];
+    let btnText = "cd " + btn.innerText.replace(" ", "").toLowerCase();
+
+    console.log(btn, btnText);
     btn.onmouseover = function() {
-	bashtext = btn.innerText;
-	console.log(bashtext);
+	bashtext = btnText;
 	updateBashText();
     }
 
@@ -28,7 +30,6 @@ for (btn of bashButtons) {
 	bashtext = "";
 	writingIter = 0;
 	bashInput.innerText = bashtext;
-	console.log("leave");
 	clearTimeout();
     }
 }

@@ -113,6 +113,7 @@ header nav ul li a {
 #bashinputtxt #bashcolon	{ color: var(--txt-color-transparent); }
 #bashinputtxt #bashthing	{ color: #429edb; }
 #bashinputtxt #bashdollar	{ color: var(--txt-color-transparent); }
+#bashinput 			{ color: #1a1a1aee; }
 #bashcursor 			{ animation: bashcursor 0.75s infinite; }
 
 
