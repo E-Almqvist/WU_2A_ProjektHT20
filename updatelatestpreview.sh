@@ -9,8 +9,8 @@ imageFile=misc/img/website_$curDate.png
 echo Updating preview $imageFile...
 
 if test -f $imageFile; then
-    cp $imageFile preview.png
-    echo Done.
+	cp $imageFile preview.png
+	echo Done.
 else
-    echo No such file.
+	echo No such file.
 fi
