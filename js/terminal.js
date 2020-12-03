@@ -4,12 +4,13 @@ var bashInput = document.getElementById("bashinput"); // the input span thing
 
 var bashtext = ""; // Buffer for the terminal input text
 
-var writingSpeed = 200; // ms for each char
+var writingSpeed = 40; // ms for each char
 var writingIter = 0;
 var dIter = 1;
 function updateBashText() {
 	textLen = bashtext.length;
-	if( writingIter < textLen || writingIter >= 0 ) {
+	console.log(writingIter, dIter, textLen)
+	if( writingIter < textLen && writingIter >= 0 ) {
 		bashInput.innerText = bashtext.substr(0, writingIter);
 		writingIter += dIter;
 
@@ -19,6 +20,7 @@ function updateBashText() {
 		setTimeout(updateBashText, writingSpeed);
 	} else {
 		clearTimeout();
+		console.log("end");
 	}
 }
 
@@ -34,10 +36,7 @@ for ( let i = 0; i<bashButtons.length; i++ ) {
 
 	btn.onmouseleave = function() {
 		dIter = -1;
-		//bashtext = "";
-		//writingIter = 0;
-		//bashInput.innerText = bashtext;
+		writingIter -= 1;
 		updateBashText()
-		//clearTimeout();
 	}
 }
