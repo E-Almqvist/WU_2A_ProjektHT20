@@ -9,7 +9,7 @@ var writingIter = 0;
 var dIter = 1;
 function updateBashText() {
 	textLen = bashtext.length;
-	if( writingIter < textLen && writingIter >= 0 ) {
+	if( writingIter <= textLen && writingIter >= 0 ) {
 		bashInput.innerText = bashtext.substr(0, writingIter);
 		writingIter += dIter;
 
