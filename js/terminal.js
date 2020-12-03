@@ -4,12 +4,11 @@ var bashInput = document.getElementById("bashinput"); // the input span thing
 
 var bashtext = ""; // Buffer for the terminal input text
 
-var writingSpeed = 40; // ms for each char
+var writingSpeed = 20; // ms for each char
 var writingIter = 0;
 var dIter = 1;
 function updateBashText() {
 	textLen = bashtext.length;
-	console.log(writingIter, dIter, textLen)
 	if( writingIter < textLen && writingIter >= 0 ) {
 		bashInput.innerText = bashtext.substr(0, writingIter);
 		writingIter += dIter;
@@ -20,7 +19,6 @@ function updateBashText() {
 		setTimeout(updateBashText, writingSpeed);
 	} else {
 		clearTimeout();
-		console.log("end");
 	}
 }
 
