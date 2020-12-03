@@ -112,6 +112,7 @@ header nav ul li a {
 #bashinputtxt #bashcolon	{ color: var(--txt-color-transparent); }
 #bashinputtxt #bashthing	{ color: #429edb; }
 #bashinputtxt #bashdollar	{ color: var(--txt-color-transparent); }
+#bashcursor 			{ animation: bashcursor 1s infinite; }
 
 
 #terminal .content_container ul {
@@ -145,6 +146,13 @@ header nav ul li a {
 
 #contact .content_container h1 {
 	font-size: 2rem;
+}
+
+
+/* Animations */
+@keyframes bashcursor {
+	from, to { color: #eee; }
+	50% { color: #eee0; }
 }
 
 /* Classes */
