@@ -160,6 +160,7 @@ header nav ul li a {
 	padding-top: 0.6rem;
 	box-shadow: 4px 4px 8px #000c;
 	width: 60vw;
+	margin-top: 1rem;
 }
 
 .button {
@@ -190,3 +191,7 @@ header nav ul li a {
 	list-style: none;
 }
 .navlist li { text-decoration: none; }
+
+.strongtxt {
+	color: #222;
+}
