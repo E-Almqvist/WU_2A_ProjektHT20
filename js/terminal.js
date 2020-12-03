@@ -7,29 +7,29 @@ var bashtext = ""; // Buffer for the terminal input text
 var writingSpeed = 20; // ms for each char
 var writingIter = 0;
 function updateBashText() {
-    textLen = bashtext.length;
-    	if( writingIter <= textLen ) {
+	textLen = bashtext.length;
+		if( writingIter <= textLen ) {
 	bashInput.innerText = bashtext.substr(0, writingIter);
 	writingIter++;
 
 	setTimeout(updateBashText, writingSpeed);
-    }
+	}
 }
 
 for ( let i = 0; i<bashButtons.length; i++ ) {
-    let btn = bashButtons[i];
-    let btnText = "/bin/restaurant --" + btn.innerText.replace(" ", "").toLowerCase();
+	let btn = bashButtons[i];
+	let btnText = "/bin/restaurant --" + btn.innerText.replace(" ", "").toLowerCase();
 
-    console.log(btn, btnText);
-    btn.onmouseover = function() {
+	console.log(btn, btnText);
+	btn.onmouseover = function() {
 	bashtext = btnText;
 	updateBashText();
-    }
+	}
 
-    btn.onmouseleave = function() {
+	btn.onmouseleave = function() {
 	bashtext = "";
 	writingIter = 0;
 	bashInput.innerText = bashtext;
 	clearTimeout();
-    }
+	}
 }
