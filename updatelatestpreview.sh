@@ -1,6 +1,6 @@
 #!/usr/bin/sh
 
-# Minor utitlity script to clone the latest preview image from misc/img/
+# Minor utility script to clone the latest preview image from misc/img/
 
 curDate=$(date "+%Y-%m-%d")
 
