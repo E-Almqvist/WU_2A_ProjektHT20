@@ -46,9 +46,8 @@ header {
 	align-items: center; 
 	width: 100%;
 	align-self: flex-start;
-	background: #fefefe;
-	background: var(--bg-color);
-	border-bottom: solid var(--border-color-transparent) 0.2rem;
+	background: linear-gradient(#eee, #fefefe);
+	border-bottom: solid var(--border-color-transparent) 0.25rem;
 }
 
 header #header_logo {
@@ -102,12 +101,7 @@ header nav ul li a {
 }
 
 #mainpage .content_container {
-	border-radius: 5px;
-	background: #fefefe;
-	background: var(--bg-color);
-	padding: 1.25rem;
-	padding-top: 0.6rem;
-	border: solid var(--border-color-transparent) 4px;
+
 }
 
 
@@ -137,9 +131,36 @@ header nav ul li a {
 }
 
 
+#contact {
+	height: 100%;
+	text-shadow: 2px 2px #fffe;
+}
+
+#contact .content_container {
+	width: 60vw;
+	margin-top: 0.25rem;
+	text-align: center;
+}
+
+
+#contact .content_container h1 {
+	font-size: 2rem;
+}
+
 /* Classes */
 .flex_wrapper { display: flex; }
 .grid_wrapper { display: grid; }
+
+.terminal_window {
+	border-radius: 5px;
+	background: #fefefee1;
+	background: var(--bg-color-transparent);
+	backdrop-filter: blur(4px);
+	padding: 1.25rem;
+	padding-top: 0.6rem;
+	box-shadow: 4px 4px 8px #000c;
+	width: 60vw;
+}
 
 .button {
 	color: #151515;
