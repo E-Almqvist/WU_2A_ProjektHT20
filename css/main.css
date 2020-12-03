@@ -92,7 +92,7 @@ header nav ul li a {
 
 
 
-#mainpage {
+#terminal {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -100,12 +100,12 @@ header nav ul li a {
 	height: 100%;
 }
 
-#mainpage .content_container {
+#terminal .content_container {
 
 }
 
 
-#mainpage .content_container #bashinputtxt {
+#terminal .content_container #bashinputtxt {
 	font-size: 1.85rem;
 	color: #43de4f;
 }
@@ -114,19 +114,19 @@ header nav ul li a {
 #bashinputtxt #bashdollar	{ color: var(--txt-color-transparent); }
 
 
-#mainpage .content_container ul {
+#terminal .content_container ul {
 	margin-top: 4rem;
 	justify-content: center;
 	align-items: center;
 }
 
-#mainpage .content_container ul li { 
+#terminal .content_container ul li {
 	margin-top: 0.6rem;
 	margin-right: 0.4rem; 
 }
-#mainpage .content_container ul li a { font-size: 2rem; }
+#terminal .content_container ul li a { font-size: 2rem; }
 
-#mainpage .content_container #website_slogan {
+#terminal .content_container #website_slogan {
 	font-size: 1.8rem;
 }
 
