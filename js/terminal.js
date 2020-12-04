@@ -9,8 +9,8 @@ var writingIter = 0;
 var dIter = 1;
 function updateBashText() {
 	textLen = bashtext.length;
-	if( writingIter <= textLen && writingIter >= 0 ) {
-		bashInput.innerText = bashtext.substr(0, writingIter);
+	if( writingIter < textLen && writingIter >= 0 ) {
+		bashInput.innerText = bashtext.substr(0, writingIter + 1);
 		writingIter += dIter;
 
 		// Small fail-safe
@@ -26,15 +26,15 @@ for ( let i = 0; i<bashButtons.length; i++ ) {
 	let btn = bashButtons[i];
 	let btnText = "/bin/restaurant --" + btn.innerText.replace(" ", "").toLowerCase();
 
-	btn.onmouseover = function() {
+	btn.addEventListener("mouseover", function() {
 		dIter = 1;
 		bashtext = btnText;
 		updateBashText();
-	}
+	});
 
-	btn.onmouseleave = function() {
+	btn.addEventListener("mouseleave", function() {
 		dIter = -1;
 		writingIter -= 1;
 		updateBashText();
-	}
+	});
 }
