@@ -35,6 +35,6 @@ for ( let i = 0; i<bashButtons.length; i++ ) {
 	btn.onmouseleave = function() {
 		dIter = -1;
 		writingIter -= 1;
-		updateBashText()
+		updateBashText();
 	}
 }
