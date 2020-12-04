@@ -28,6 +28,7 @@ for ( let i = 0; i<bashButtons.length; i++ ) {
 
 	btn.addEventListener("mouseover", function() {
 		dIter = 1;
+		writingIter = 0;
 		bashtext = btnText;
 		updateBashText();
 	});

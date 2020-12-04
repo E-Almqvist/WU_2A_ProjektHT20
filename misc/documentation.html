@@ -154,7 +154,12 @@
 
 		<br>
 		<h4>2020-12-04 Under lektionen</h4>
-		Jag lyckades att fixa mitt terminal problem. Jag lade till 1 till indexet bara och sedan optimerade koden lite.
+		Jag lyckades att fixa mitt terminal problem. Jag lade till dIter till indexet och sedan optimerade koden lite. Bakgrunden innan var runt 3MB vilket var för mycket. Använde ett verktyg på Linux som heter <a href="https://wiki.archlinux.org/index.php/ImageMagick">ImageMagick</a>. Fick bilden till att bli runt 145KB vilket är mycket bättre. Resizade bilden till 1920x och kvalité på 75%. Hemsidan laddus upp på 1 nanosekund nu (inte direkt men typ)!
+		Märkte också ett bugg med <code>.terminal_window</code> och <code>.background</code> där <code>.terminal_window</code> inte inheritade från bakgrundsklassen. Jag fixade detta genom att select:a båda klasserna och sedan låte <code>.terminal_window</code> skriva över det den behöver. Såhär: <br>
+		<code>
+		.background, .terminal_window {}<br>
+		.terminal_window {}
+		</code>
 
 		<h3>Lektioner vecka 50</h3>
 		<!-- Fyll på med dokumentation här. -->

@@ -182,22 +182,16 @@ header nav ul li a {
 .flex_wrapper { display: flex; }
 .grid_wrapper { display: grid; }
 
-.background {
+.background, .terminal_window {
 	border-radius: 5px;
 	background: #fefefee1;
 	background: var(--bg-color-transparent);
 	backdrop-filter: blur(4px);
-	box-shadow: 4px 4px 8px #000c;
+	box-shadow: 4px 4px 8px #0007;
 }
 
 .terminal_window {
-	.background;
-	border-radius: 5px;
-	background: #fefefee1;
-	background: var(--bg-color-transparent);
-	backdrop-filter: blur(4px);
 	padding: 1.25rem;
-	box-shadow: 4px 4px 8px #000c;
 	width: 45rem;
 	margin-top: 1rem;
 }
