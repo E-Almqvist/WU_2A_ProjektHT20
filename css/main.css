@@ -171,7 +171,7 @@ header nav ul li a {
 }
 
 #menulist ul li {
-	border-radius: 2px;
+	border-radius: 4px;
 	margin: 1rem 0;
 	overflow-x: hidden;
 }
@@ -183,9 +183,38 @@ header nav ul li a {
 	display: block;
 }
 
+
 #menupreview {
 	grid-area: "mp";
 	margin-left: 2.5rem;
+	padding: 2rem;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 1fr;
+	grid-template-areas:
+		"pr in" /* Preview Picture : Ingredients */
+		"ba ba" /* Background text : background text */
+	;
+}
+
+#menupreview #foodpicture_container { /* ID followed by an ID is not needed but I want to be specific so that I can reuse this stylesheet later */
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	grid-area: "pr";
+
+	box-shadow: 4px 4px 8px #0007;
+	padding: 0.4rem;
+	margin: 0 1rem 1rem 1rem;
+}
+
+#menupreview #foodpicture_container img {
+	width: auto;
+	height: 20rem;
+}
+
+#menupreview #foodcontents {
+	grid-area: "in";
+	margin: 0 1rem 1rem 1rem;
 }
 
 
@@ -216,6 +245,7 @@ header nav ul li a {
 .foodselected {
 	background: #fffefee1;
 	box-shadow: 4px 4px 8px #8887;
+	opacity: 40%;
 }
 
 .button {
