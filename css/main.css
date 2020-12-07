@@ -188,43 +188,49 @@ header nav ul li a {
 	grid-area: "mp";
 	margin-left: 2.5rem;
 	padding: 2rem;
+	overflow-y: scroll;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: auto 1fr;
+	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
-		"pr in" /* Preview Picture : Ingredients */
-		"ba ba" /* Background text : background text */
+		"pr in"
+		"ba ba"
 	;
 }
 
-#menupreview #foodpicture_container { /* ID followed by an ID is not needed but I want to be specific so that I can reuse this stylesheet later */
+#foodpicture_container {
 	display: flex;
-	align-content: center;
+	align-self: center;
 	justify-content: center;
-	grid-area: "pr";
+	grid-area: pr;
+	padding: 5px;
 
 	box-shadow: 4px 4px 8px #0007;
-	padding: 0.4rem;
 	margin: 0 1rem 1rem 1rem;
 }
 
-#menupreview #foodpicture_container img {
+#foodpicture_container img {
 	width: auto;
 	height: 20rem;
 }
 
-#menupreview #foodcontents {
+#foodcontents {
 	display: flex;
 	flex-direction: column;
 
-	grid-area: "in";
-	margin: 0 1rem 1rem 1rem;
+	grid-area: in;
+	padding: 0 1rem 1rem 1rem;
 }
 
 #foodcontents h1 {
 	text-align: center;
 	font-size: 2rem;
-	margin-bottom: 1rem;
+	padding-bottom: 1rem;
 	text-decoration: underline;
+}
+
+#foodbackground {
+	grid-area: ba;
+	padding: 1rem;
 }
 
 
@@ -257,6 +263,9 @@ header nav ul li a {
 	box-shadow: 4px 4px 8px #8887;
 	opacity: 40%;
 }
+.foodselected a {
+	text-decoration: underline;
+}
 
 .button {
 	color: #151515;
@@ -267,6 +276,7 @@ header nav ul li a {
 .button:hover {
 	color: #1515158a;
 	color: var(--button-hover-color);
+	cursor: pointer;
 }
 
 .bashbutton {
