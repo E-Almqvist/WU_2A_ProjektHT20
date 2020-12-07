@@ -213,8 +213,18 @@ header nav ul li a {
 }
 
 #menupreview #foodcontents {
+	display: flex;
+	flex-direction: column;
+
 	grid-area: "in";
 	margin: 0 1rem 1rem 1rem;
+}
+
+#foodcontents h1 {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	text-decoration: underline;
 }
 
 
