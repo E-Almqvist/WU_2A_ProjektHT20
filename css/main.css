@@ -90,8 +90,6 @@ header nav ul li a {
 }
 
 
-
-
 #terminal {
 	display: flex;
 	flex-direction: column;
@@ -188,6 +186,7 @@ header nav ul li a {
 	grid-area: "mp";
 	margin-left: 2.5rem;
 	padding: 2rem;
+	wrap: wrap;
 	overflow-y: scroll;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -210,7 +209,7 @@ header nav ul li a {
 
 #foodpicture_container img {
 	width: auto;
-	height: 20rem;
+	height: 15rem;
 }
 
 #foodcontents {
@@ -260,8 +259,9 @@ header nav ul li a {
 
 .foodselected {
 	background: #fffefee1;
-	box-shadow: 4px 4px 8px #8887;
+	box-shadow: 4px 4px 8px #8882;
 	opacity: 40%;
+	transition-duration: 0.8s;
 }
 .foodselected a {
 	text-decoration: underline;
