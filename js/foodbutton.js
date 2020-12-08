@@ -14,6 +14,6 @@ for ( let i = 0; i<buttons.length; i++ ) {
 
 		btn.parentElement.classList += " foodselected";
 
-		foodheader.innerText = "Tasty Green Sallad #" + (i+1).toString();
+		foodheader.innerText = btn.innerText;
 	});
 }
