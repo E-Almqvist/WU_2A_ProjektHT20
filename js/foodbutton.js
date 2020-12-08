@@ -18,6 +18,6 @@ for ( let i = 0; i<buttons.length; i++ ) {
 
 	    btn.parentElement.classList += " foodselected";
 
-	    foodheader.replace(/([0-9]+)$/, "hej")
+	    foodheader.innerText.replace(/([0-9]+)/, toString(i));
 	});
 }
