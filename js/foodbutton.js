@@ -17,6 +17,6 @@ for ( let i = 0; i<buttons.length; i++ ) {
 		el.parentElement.className = el.parentElement.className.replace(/\bfoodselected\b/, "");
 	    });
 
-	    btn.parentElement.classList.add("foodselected");
+	    btn.parentElement.classList += " foodselected";
 	});
 }
