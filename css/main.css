@@ -333,11 +333,28 @@ header nav ul li a {
 
 
 #bookingmail {
+	/* text-align: center; */
+	font-size: 3.2rem;
 	margin-top: 1rem;
 }
-#bookingmail {
+
+#bookingmail h1 {
 	text-align: center;
-	font-size: 3.2rem;
+}
+
+#bookingform {
+	padding: 0 4rem 2rem 4rem;
+}
+
+#bookingform input, #bookingform select {
+	display: inline-block;
+	width: 100%;
+	padding: 0 1rem;
+	margin: 2px 0;
+}
+
+#bookingmail #bookingform label {
+	font-size: 1.2rem;
 }
 
 
@@ -351,7 +368,7 @@ header nav ul li a {
 .flex_wrapper { display: flex; }
 .grid_wrapper { display: grid; }
 
-.background, .terminal_window, .foodselected {
+.background, .terminal_window, .foodselected, .inputbox {
 	border-radius: 5px;
 	background: #fefefee1;
 	background: var(--bg-color-transparent);
@@ -411,4 +428,10 @@ header nav ul li a {
 
 .strongtxt {
 	color: #222;
+}
+
+.inputbox {
+	padding: 0.1rem 0.8rem;
+	font-size: 1.6rem;
+	box-shadow: none;
 }
