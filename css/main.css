@@ -254,7 +254,7 @@ header nav ul li a {
 #booking #map {
 	grid-area: maps;
 	flex-direction: column;
-	margin-left: 2rem;
+	margin-left: 5vw;
 	padding-bottom: 0;
 }
 
@@ -303,13 +303,13 @@ header nav ul li a {
 
 #hoursinfo h1 {
 	display: block;
-	text-align: left;
+	text-align: center;
 	font-size: 3.2rem;
 }
 
 #hoursinfo h2 {
 	display: block;
-	text-align: left;
+	text-align: center;
 	font-size: 1.5rem;
 	color: #151515aa;
 }
@@ -324,7 +324,7 @@ header nav ul li a {
 	font-size: 1.8rem;
 	margin-top: 0.2rem;
 	color: #151515;
-	text-align: left;
+	text-align: center;
 }
 
 #hoursinfo ul li p em {
@@ -337,7 +337,7 @@ header nav ul li a {
 }
 #bookingmail {
 	text-align: center;
-	font-size: 2.2rem;
+	font-size: 3.2rem;
 }
 
 
