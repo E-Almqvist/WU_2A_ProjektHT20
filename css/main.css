@@ -235,12 +235,12 @@ header nav ul li a {
 
 /* booking.html */
 #booking {
-	padding: 4rem 8rem;
+	padding: 2rem 8rem;
 	width: 100%;
 	height: 100%;
 
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1.5fr;
+	grid-template-columns: 1fr 1.5fr;
+	grid-template-rows: 35vh 50vh;
 	grid-template-areas:
 		"book maps"
 		"opho maps"
@@ -251,10 +251,11 @@ header nav ul li a {
 	overflow-y: auto;
 }
 
-#map {
+#booking #map {
 	grid-area: maps;
 	flex-direction: column;
 	margin-left: 2rem;
+	padding-bottom: 0;
 }
 
 #map h1 {
@@ -266,17 +267,20 @@ header nav ul li a {
 }
 
 #map h2 {
-	margin-top: auto;
 	color: #151515e1;
 }
 
+#maptextcontainer {
+	margin-top: -1rem;
+	padding: 1rem;
+}
+
 #googlemap_container {
-	margin: 1rem 0;
-	margin-top: 1rem;
+	margin-top: 2rem;
 	padding: 0.4rem;
 	justify-content: center;
 	align-content: center;
-	height: 50%;
+	height: 100%;
 	width: auto;
 }
 
@@ -300,7 +304,7 @@ header nav ul li a {
 #hoursinfo h1 {
 	display: block;
 	text-align: left;
-	font-size: 2.2rem;
+	font-size: 3.2rem;
 }
 
 #hoursinfo h2 {
@@ -317,8 +321,7 @@ header nav ul li a {
 }
 
 #hoursinfo ul li p {
-	font-size: 1.7rem;
-	margin: 0 4rem;
+	font-size: 1.8rem;
 	margin-top: 0.2rem;
 	color: #151515;
 	text-align: left;
