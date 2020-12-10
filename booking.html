@@ -37,15 +37,13 @@
 				<article class="background" id="hoursinfo">
 					<div class="content_container">
 						<h1>Open Hours</h1>
-						<h2>Central Europe Time (UTC+01:00)</h2>
+						<h2>Central Europe Time<br>(UTC+01:00)</h2>
 						<ul class="verticallist">
 							<li><p><em>Mondays:</em> 08:00 - 08:01</p></li>
 							<li><p><em>Tuesdays:</em> 08:00 - 08:01</p></li>
-							<li><p><em>Wednesdays:</em> CLOSED</p></li>
 							<li><p><em>Thursdays:</em> 08:00 - 08:02</p></li>
 							<li><p><em>Fridays:</em> 05:00 - 23:59</p></li>
 							<li><p><em>Saturdays:</em> 08:00 - 08:01</p></li>
-							<li><p><em>Sundays:</em> CLOSED</p></li>
 						</ul>
 					<div>
 				</article>
@@ -53,6 +51,11 @@
 				<article class="background" id="bookingmail">
 					<h1>Booking</h1>
 					<form id="bookingform">
+						<label for="tableid">Table</label>
+						<select id="tableid" name="tableid">
+							<option value="1">Table 1</option>
+						</select>
+
 						<label for="username">Full name</label>
 						<input class="inputbox" id="username" type="text" placeholder="John Doe">
 
@@ -61,11 +64,6 @@
 
 						<label for="userphone">Phone Number</label>
 						<input class="inputbox" id="userphone" type="text" placeholder="+46-123-123-1234">
-
-						<label for="tableid">Table</label>
-						<select id="tableid" name="tableid">
-							<option value="1">Table 1</option>
-						</select>
 
 						<input type="submit" value="Request Table">
 					</form>
