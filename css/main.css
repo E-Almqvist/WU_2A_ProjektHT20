@@ -236,11 +236,12 @@ header nav ul li a {
 /* booking.html */
 #booking {
 	padding: 2rem 8rem;
-	width: 100%;
+	/* width: 100%; */
 	height: 100%;
-
-	grid-template-columns: 1.5fr 1fr;
-	grid-template-rows: 35vh 50vh;
+	overflow-x: hidden;
+	gap: 2vh 5vw;
+	grid-template-columns: 50rem 25rem;
+	grid-template-rows: 20rem 30rem;
 	grid-template-areas:
 		"maps book"
 		"maps opho"
@@ -254,7 +255,7 @@ header nav ul li a {
 #booking #map {
 	grid-area: maps;
 	flex-direction: column;
-	margin-right: 5vw;
+	/* margin-right: 5vw; */
 	padding-bottom: 0;
 }
 
@@ -291,9 +292,10 @@ header nav ul li a {
 
 
 #hoursinfo {
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
 #hoursinfo .content_container {
@@ -335,7 +337,8 @@ header nav ul li a {
 
 #bookingmail {
 	font-size: 3.2rem;
-	margin-top: 1rem;
+	/* margin-top: 1rem; */
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
