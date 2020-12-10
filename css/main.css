@@ -199,7 +199,7 @@ header nav ul li a {
 
 #foodpicture_container {
 	display: flex;
-	align-self: center;
+	/* align-self: center; */
 	justify-content: center;
 	grid-area: pr;
 	padding: 5px;
@@ -210,20 +210,22 @@ header nav ul li a {
 
 #foodpicture_container img {
 	width: auto;
-	height: 15rem;
+	height: 25rem;
 }
 
 #foodcontents {
 	display: flex;
 	flex-direction: column;
+	overflow-y: scroll;
 
 	grid-area: in;
 	padding: 0 1rem 1rem 1rem;
+	font-size: 1.2rem;
 }
 
 #foodcontents h1 {
 	text-align: center;
-	font-size: 2rem;
+	font-size: 3rem;
 	padding-bottom: 1rem;
 	text-decoration: underline;
 }
@@ -233,12 +235,19 @@ header nav ul li a {
 	padding: 1rem;
 }
 
+#foodbackground h1 {
+	font-size: 2rem;
+}
+
+#foodbackground p {
+	font-size: 1.2rem;
+}
+
 /* booking.html */
 #booking {
 	padding: 2rem 8rem;
 	/* width: 100%; */
 	height: 100%;
-	overflow-x: hidden;
 	gap: 2vh 5vw;
 	grid-template-columns: 50rem 25rem;
 	grid-template-rows: 20rem 30rem;
