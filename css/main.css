@@ -253,6 +253,7 @@ header nav ul li a {
 	align-items: center;
 	width: 100%;
 	height: 100%;
+	overflow-y: auto;
 }
 
 #booking {
@@ -372,6 +373,12 @@ header nav ul li a {
 	width: 100%;
 	padding: 2px 5px;
 	margin-bottom: 0.5rem;
+	color: #151515aa;
+}
+
+#bookingform select {
+	font-size: 1.1rem;
+	color: #151515aa;
 }
 
 #bookingmail #bookingform label {
