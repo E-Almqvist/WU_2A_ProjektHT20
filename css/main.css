@@ -208,8 +208,8 @@ header nav ul li a {
 }
 
 #foodpicture_container img {
-	width: auto;
-	height: 25rem;
+	width: 30rem;
+	height: auto;
 }
 
 #foodcontents {
