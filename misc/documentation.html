@@ -299,7 +299,7 @@
 		Jag tänkte använda <a href="https://brave.com/" target="_blank">Brave</a> webbläsaren men det tog för lång tid att ladda ned och kompilera den från source... Så jag valde att använda mig av Epiphany istället.
 
 		<br><br>
-		<strong>OBS:</strong> Jag kommer bara att visa upp testkörningarna för sidan <code>booking.html</code> då den har mest "innehåll" (visar dock upp <code>index.html</code> för Epiphany för då skedde det något skumt).
+		<strong>OBS:</strong> Jag kommer bara att visa upp testkörningarna för sidan <code>inedx.html</code> då den har mest "innehåll" (visar dock upp <code>booking.html</code> för w3m gör något coolt där.).
 
 		<h4>Firefox</h4>
 		<img class="webimg" src="img/browser_firefox.png" alt="Firefox test for booking.html">
@@ -307,7 +307,7 @@
 
 		<h4>Chromium</h4>
 		<img class="webimg" src="img/browser_chromium.png" alt="Chromium test for booking.html">
-		<br>Det verkar som om att sidan <em>overlappar</em> jämfört med Firefox. Detta kan dock nog bero på att jag råkade zooma in på sidan innan jag tog screenshot:en. Annars fungerar allt. En sak som är dåligt är att webbläsaren laggar extremt mycket jämfört med Firefox. Det tar kanske <em>10x</em> längre tid för den att rendera sidan. Detta beror nog på att det är en dålig webbläsare och inte att hemsidan är dålig. Eller ja, det är ju Google som ligger bakom den. Det förvånar mig inte.
+		<br>Det verkar som att allt fungerar som det ska. En sak som är dåligt dock är att webbläsaren laggar extremt mycket jämfört med Firefox. Det tar kanske <em>10x</em> längre tid för den att rendera sidan. Detta beror nog på att det är en dålig webbläsare och inte att hemsidan är dålig. Eller ja, det är ju Google som ligger bakom den. Det förvånar mig inte.
 
 		<h4>Epiphany</h4>
 		<img class="webimg" src="img/browser_epiphany.png" alt="Epiphany test for booking.html">
@@ -315,13 +315,24 @@
 
 		<h4>w3m</h4>
 		<img class="webimg" src="img/browser_w3m.png" alt="W3m test for booking.html">
-		<br>Då w3m inte har något stöd för varken CSS eller javascript så ser hemsidan ut sådär. Generellt sätt fungerar den som den ska utan några problem, bara att det inte är någon CSS eller javascript. Detta kan vara rätt bra om man bara söker efter innehållet och inte coola bilder osv. Men jag skulle säga att hemsidan fungerar här också.
+		<br>Då w3m inte har något stöd för varken CSS eller javascript så ser hemsidan ut sådär. Generellt sätt fungerar den som den ska utan några problem, bara att det inte är någon CSS eller javascript. Detta kan vara rätt bra om man bara söker efter innehållet och inte coola bilder osv. Men jag skulle säga att hemsidan fungerar här också. Men en cool sak med det är att <em>formen</em> fungerar. Det går även att klicka på dess saker och skriva i dem!
 
 
-		<h2>5. Utvärdering (skrivs i slutet av arbetet, innan inlämning)</h2>
+		<h2>5. Utvärdering</h2>
 		<!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
 		Nyanserat: "hur hade det blivit om jag istället hade...?"
  		Konkreta förbättringsförslag i produkt + process. -->
+		Jag blev rätt nöjd med hemsidan. Den ser rätt snygg ut tycker jag. Det jag gillar mest med hemsidan är terminalen i <code>index.html</code> (samt artiklarna med klassen <code>background</code> i de andra sidorna). Dess shadow och blurr (för den som använder en vettig webbläsare) gör så att den blir väldigt snygg och den ser mer "clean" ut. Det är samma för artiklarna på alla sidor. Men jag är mest stolt över terminalens "typewriter" animation som jag skrev i javascript (se <code>/js/terminal.js</code>). Jag gillar också färgvalen för sidorna. Dessa färger gör också så att sidan ser mera "clean" ut vilket är rätt modernt i år.
+
+		<br><br>
+
+		Det som gick mindre bra var terminalens text-animation när man byter snabbt till en annan knapp. Istället för att sudda och sedan skriva så tar den bort allt och skriver om vilket inte ser så snyggt ut. Jag kunde nog göra detta bättre men eftersom jag inte ville investera så mycket tid i att scripta javascript saker så gjorde jag icke det.
+		<br>
+		En annan sak som gick mindre bra var <code>menu.html</code>. Det hade blivit mycket bättre om man kunde typ välja mat och kombinera det med någon dryck och sedan få ut ett pris på vad det skulle kosta. Det skulle också blivit mycket bättre om "maträtts-väljaren" innehöll snyggare knappar som inte var avlånga med bara text i. Kanske ett sätt för att söka på maträtter då det är jobbigt att skrolla för a leta ibland? Dessutom skulle det ha blivit mycket bättre om jag stylade om <code>#foodcontents</code> (där maträttens namn står) så att den skulle passa mera in i layouten och inte behöva en egen "scroll-bar".
+
+		<br><br>
+
+
 
 	</body>
 </html>
