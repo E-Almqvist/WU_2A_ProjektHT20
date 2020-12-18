@@ -53,9 +53,7 @@ header {
 	align-items: center; 
 	width: 100%;
 	align-self: flex-start;
-	background: linear-gradient(#eeef, var(--bg-color-transparent));
-	/* background: #fefefefe; */
-	/* background: var(--bg-color-transparent); */
+	background: linear-gradient( 45deg, #eeef, #fefefee1, 50% );
 	backdrop-filter: blur(8px);
 	border-bottom: solid var(--border-color-transparent) 0.25rem;
 }
@@ -163,7 +161,7 @@ header nav ul li a {
 }
 
 #menulist {
-	grid-area: "ml";
+	grid-area: ml;
 	margin-right: 2.5rem;
 	padding: 2rem;
 	padding-top: 0;
@@ -186,7 +184,7 @@ header nav ul li a {
 
 
 #menupreview {
-	grid-area: "mp";
+	grid-area: mp;
 	margin-left: 2.5rem;
 	padding: 2rem;
 	wrap: wrap;
