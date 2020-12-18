@@ -250,19 +250,34 @@
 		<br>Som jag förklarade ovan: <code>backdrop-filter</code> är för moderna webbläsare. Den fungerar för alla moderna webbläsare förutom Internet Explorer. Men jag har en fallback för den om någon vill så använda Internet Explorer. Se <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter">backdrop-filter</a>.
 
 		<h3>HTML Validering</h3>
-		<h4>index.html</h4>
+		<h4 id="indexval">index.html</h4>
 		<img class="webimg" src="img/htmlvalidate_index.png" alt="HTML Validation for index.html">
 		<br>Jag fick 5 varningar. Inga errors.</br>
-		<ol>
-			<li id="oneone">Bytte h1-taggen till en h2-tagg. Antar att detta följer "reglerna" mera.</li>
-			<li id="twotwo">Sektioner i vanliga fall har en h1-tagg. Men inte alltid då de kan användas utan en. I detta fallet skulle det vara meninglöst att lägga till en. Därav finns det ingen h1-tagg. Kunde byta ut <code>section</code> till <code>div</code> men det skulle inte vara like semantiskt då jag bokstavligen använder den som en <em>sektion</em> för sidan.</li>
-			<li>Samma som <a href="#oneone">1.</a></li> <!-- Kanske vore smart att ha bättre IDs men detta är dokumentationen, inte hemsidan :) -->
-			<li>Samma som <a href="#twotwo">2.</a></li>
-			<li>Gammal vana att skriva <code>type</code>. Tog bara bort den. (Gjorde detta för alla filer med javascript med dem)</li>
-		</ol>
+		<br>Jag bytte ut alla <code>section</code> som var wrappers till <code>div</code> och då fick jag inga varningar. Det kanske blev lite mindre semantiskt men jag tror nog att det blev mer semantiskt då det följer de "semantiska reglerna" bättre. Den skulle egentligen inte användas som en <code>section</code> så det var bäst att jag bytte ut den.
+		<br><br>
+		Jag tog också bort <code>type=</code> attributet från alla <code>script</code> taggar då det inte behövs längre tydligen. <strong>Gjorde också detta för <code>menu.html</code>. Därav nämns det inte där</strong>.
+		<br>Valideringen efter:<br>
+		<img class="webimg" src="img/htmlvalidate_end.png" alt="HTML Validation for index.html after refactor">
 
 		<h4>menu.html</h4>
+		<img class="webimg" src="img/htmlvalidate_menu.png" alt="HTML Validation for menu.html">
+		<br>Jag fick 3 varningar. Inga errors.</br>
+		<br>Gjorde bokstavligen samma sak som i <a href="#indexval">index.html</a> valideringen.
+		<br>Valideringen efter:<br>
+		<img class="webimg" src="img/htmlvalidate_end.png" alt="HTML Validation for index.html after refactor">
+
 		<h4>booking.html</h4>
+		<img class="webimg" src="img/htmlvalidate_booking.png" alt="HTML Validation for booking.html">
+		<br>Jag fick ANTAL varningar. Inga errors.</br>
+		<ol>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+		<br>Valideringen efter:<br>
+		<img class="webimg" src="img/htmlvalidate_end.png" alt="HTML Validation for index.html after refactor">
 
 		<h2>5. Utvärdering (skrivs i slutet av arbetet, innan inlämning)</h2>
 		<!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
