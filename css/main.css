@@ -53,9 +53,10 @@ header {
 	align-items: center; 
 	width: 100%;
 	align-self: flex-start;
-	background: linear-gradient( 45deg, #eeef, #fefefee1, 50% );
-	backdrop-filter: blur(8px);
-	border-bottom: solid var(--border-color-transparent) 0.25rem;
+	/* background: linear-gradient( 45deg, #eeef, #fefefee1, 50% ); */
+	/* background: none; */
+	/* backdrop-filter: blur(8px); */
+	/* border-bottom: solid var(--border-color-transparent) 0.25rem; */
 }
 
 header #header_logo {
