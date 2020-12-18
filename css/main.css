@@ -52,7 +52,6 @@ header {
 	justify-content: center; 
 	align-items: center; 
 	width: 100%;
-	height: auto;
 	align-self: flex-start;
 	background: linear-gradient( 45deg, #eeef, #fefefee1, 50% );
 	backdrop-filter: blur(8px);
