@@ -187,7 +187,6 @@ header nav ul li a {
 	grid-area: mp;
 	margin-left: 2.5rem;
 	padding: 2rem;
-	wrap: wrap;
 	overflow-y: auto;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -333,7 +332,6 @@ header nav ul li a {
 
 #hoursinfo ul {
 	list-style: none;
-	align-self: left;
 	text-align: left;
 }
 
@@ -352,7 +350,6 @@ header nav ul li a {
 
 #bookingmail {
 	font-size: 3.2rem;
-	/* margin-top: 1rem; */
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
