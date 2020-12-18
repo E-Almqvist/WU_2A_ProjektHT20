@@ -221,6 +221,7 @@
 		<!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? -->
 
 		<h3>CSS Validering</h3>
+		<strong>Använde mig av det här <a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS valideringsverktyget</a></strong>
 		<br>
 		<img class="webimg" src="img/cssvalidate.png" alt="CSS Validation">
 		<br> Jag fick också 10 varningar om tex: <code><code>--bg-color</code> is an unknown vendor extension</code>. Den säger då att den är en "unknown vendor extension" men jag har anpassat min CSS kod så att det inte spelar så stor roll. Om den extensionen inte fungerar i tex Chromium så kommer CSS koden att ta samma färg endå. Anledningen till varför jag har massa variabler är för att det är jobbigt att byta på många ställen och kodkvalitén blir mycket bättre i min åsikt.
@@ -250,6 +251,8 @@
 		<br>Som jag förklarade ovan: <code>backdrop-filter</code> är för moderna webbläsare. Den fungerar för alla moderna webbläsare förutom Internet Explorer. Men jag har en fallback för den om någon vill så använda Internet Explorer. Se <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter">backdrop-filter</a>.
 
 		<h3>HTML Validering</h3>
+		<strong>Använde mig av det här <a href="https://validator.w3.org/nu/" target="_blank">HTML valideringsverktyget</a></strong>
+
 		<h4 id="indexval">index.html</h4>
 		<img class="webimg" src="img/htmlvalidate_index.png" alt="HTML Validation for index.html">
 		<br>Jag fick 5 varningar. Inga errors.</br>
@@ -270,9 +273,14 @@
 		<img class="webimg" src="img/htmlvalidate_booking.png" alt="HTML Validation for booking.html">
 		<br>Jag fick 1 varning och 6 errors. Oops...</br>
 		<br><strong>1-3:</strong> Detta var bara en så kallad "missclick". Råkade antagligen klicka på <code>,</code> knappen medans jag skrev den HTML-snutten. Tog bort kommat och det fixade sig
+		<br><strong>4:</strong> Tog bort <code>frame-border</code> som attribut bara. Denna var copy-pastead från Googles API embed sak därav märkte jag den icke.
+		<br><strong>5-7:</strong> Råkade glömma ett <code>/</code> tecken för stängningen av <code>div</code> taggen vid rad 49. Lade till det bara.
 
 		<br>Valideringen efter:<br>
 		<img class="webimg" src="img/htmlvalidate_end.png" alt="HTML Validation for index.html after refactor">
+
+		<h3>Kontrast & Färg Validering</h3>
+		<strong>Använde mig av <a href="https://contrastchecker.com/" target="_blank">contrastcheck.com</a> som kontrast valideringsverktyg.</strong>
 
 		<h2>5. Utvärdering (skrivs i slutet av arbetet, innan inlämning)</h2>
 		<!-- Ex: Vad gick bra/mindre bra? (i arbetet/din förmåga).
