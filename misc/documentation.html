@@ -109,27 +109,27 @@
 		<h3>Lektioner vecka 47</h3>
 		<!-- Fyll på med dokumentation här. -->
 		Denna skissade jag på hemsidan samt skrev planeringen ovan. Jag fixade också indenteringen för misc/documentation.html ( tabs > spaces :) ).
-		Här är min skiss:
-		<img class="webimg" src="img/skiss.jpg" alt="min skiss" style="height:20rem; width:auto;">
-		Jag jobbade lite på hemsidan också. Stötte på ett problem med min IDE (Emacs (Doom Emacs)) då syntax highlightning inte fanns till CSS. Så jag använde Vim under lektionen. Här är hur hemsidan såg ut efter lektionen. Har inte gjort någon styling än. Tänkte att bakgroundsbilden skall vara en faktisk bakgrounds bild för "main_wrapper" via CSS styling.
-		<img class="webimg" src="img/website_2020-11-18.png" alt="Website at 2020-11-18">
+		Här är min skiss:<br>
+		<img class="webimg" src="img/skiss.jpg" alt="min skiss" style="height:20rem; width:auto;"><br>
+		Jag jobbade lite på hemsidan också. Stötte på ett problem med min IDE (Emacs (Doom Emacs)) då syntax highlightning inte fanns till CSS. Så jag använde Vim under lektionen. Här är hur hemsidan såg ut efter lektionen. Har inte gjort någon styling än. Tänkte att bakgroundsbilden skall vara en faktisk bakgrounds bild för "main_wrapper" via CSS styling.<br>
+		<img class="webimg" src="img/website_2020-11-18.png" alt="Website at 2020-11-18"><br>
 		Se commit logsen (git) med `git log` för att se alla kodändringar.
 
 		<h3>Lektioner vecka 48</h3>
 		<!-- Fyll på med dokumentation här. -->
 		<h4>Innan lektionerna</h4>
-		Jag har påbörjat headern och navbaren i den. Jag lade till en temporär bakgroundsbild för att se hur det ser ut. Jag lade också till lite knapp animationer och generell CSS styling för allt annat. Jag har dock stött på ett problem att hemsidan blir för stor även om jag sätter både width och height till respektive 100vw, 100vh. Det kan du se i bilden nedan då det finns overlapping. Jag får nog fixa det nästa gång.
-		<img class="webimg" src="img/website_2020-11-24.png" alt="Website at 2020-11-24">
+		Jag har påbörjat headern och navbaren i den. Jag lade till en temporär bakgroundsbild för att se hur det ser ut. Jag lade också till lite knapp animationer och generell CSS styling för allt annat. Jag har dock stött på ett problem att hemsidan blir för stor även om jag sätter både width och height till respektive 100vw, 100vh. Det kan du se i bilden nedan då det finns overlapping. Jag får nog fixa det nästa gång.<br>
+		<img class="webimg" src="img/website_2020-11-24.png" alt="Website at 2020-11-24"><br>
 
 		<h3>Under lektionerna</h3>
 		<h4>2020-11-26</h4>
-		Jag stylade index.html så att headern var där uppe och allt annat. Fixade överlappningen men har kvar ett litet "bugg". Navigeringsbaren som skall vara i mitten är bara i mitten på x-led och inte y-led. Se bild nedan:
-		<img class="webimg" src="img/website_2020-11-26.png" alt="Website at 2020-11-26">
+		Jag stylade index.html så att headern var där uppe och allt annat. Fixade överlappningen men har kvar ett litet "bugg". Navigeringsbaren som skall vara i mitten är bara i mitten på x-led och inte y-led. Se bild nedan:<br>
+		<img class="webimg" src="img/website_2020-11-26.png" alt="Website at 2020-11-26"><br>
 		Får fixade det senare. Behöver också tänka om på hur hemsidan skall se ut och styla den mer. Just nu ser den väldigt ful ut.
 
 		<h4>2020-11-27</h4>
 		Idag under lektionen har har nästan gjort klart index.html. Det enda som kvarstår är att hitta en bra bakgrund och göra den "blurrig", en logo och knapparna i mitten av sidan. Hemsidan ser något bättre ut nu. Jag bestämmde mig för att likna hemsidans layout med <a href="https://dwm.suckless.org/">dwm</a> vilket är en light-weight window manager (WM) för GNU/Linux (och UNIX) skriven i C. index.html är då i "floating mode". De andra skall vara i tiled mode.
-		Såhär ser hemsidan ut idag:
+		Såhär ser hemsidan ut idag:<br>
 		<img class="webimg" src="img/website_2020-11-27.png" alt="Website at 2020-11-27">
 		
 		<h3>Lektioner vecka 49</h3>
@@ -200,14 +200,24 @@
 		<br><br>
 		Nästa gång skall jag göra loggan och då är allt klart. Efter det så skall jag testa hemsidan med kontrast checker, html validator osv osv.
 
-		<h4>2020-12-17 Under lektionen</h4>
-		Idag har jag gjort loggan. Jag kom fram till att ha texten "/bin/restaurant" och sedan en liten slogan under den. Jag gjorde detta i <a href="https://wiki.archlinux.org/index.php/GIMP">GIMP</a>. Men jag märke också hur tråkig loggan blev med bara text (dessutom var den för ful). Jag funderade då en stund och kom fram till att ha en terminal framför loggans text. Jag sökte runt och försökte hitta en bra terminal ikon men jag hittade bara massa med dåliga licenser (GNU v2, CC etc (dess är inte dåliga men jag orkar inte hålla på med massa "rättigheter och skyldigheter"/lagar osv)). Jag bestämde mig att göra en egen terminal logga. Jag tog lite insiration från en screenshot på <a href="https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/optimized/2X/5/5249bad7f0bb536adceb8a9381c7366054546763_2_690x404.png">Ubuntus gnome-terminal</a> som jag hittade på Google. Jag valde att byta ut färgerna så att de skulle passa hemsidan (svart och grå) och flyttade på terminalens "nav buttons" till vänster. Bytte också dess knappars färger till röd, grön och blå (RGB). Jag behöll dock de avrundade kanterna. Loggan behövdes inte komprimeras då jag gjorde den i sådan lågupplösning som möjligt.<br>Tweakade också lite färger och annat på hemsidan.
+		<h4 id="2020-12-17">2020-12-17 Under lektionen</h4>
+		Idag har jag gjort loggan. Jag kom fram till att ha texten "/bin/restaurant" och sedan en liten slogan under den. Jag gjorde detta i <a href="https://wiki.archlinux.org/index.php/GIMP">GIMP</a>. Men jag märke också hur tråkig loggan blev med bara text (dessutom var den för ful). Jag funderade då en stund och kom fram till att ha en terminal framför loggans text. Jag sökte runt och försökte hitta en bra terminal ikon men jag hittade bara massa med dåliga licenser (GNU v2, CC etc (dess är inte dåliga men jag orkar inte hålla på med massa "rättigheter och skyldigheter"/lagar osv)). Jag bestämde mig att göra en egen terminal logga. Jag tog lite insiration från en screenshot på <a href="https://ubuntucommunity.s3.dualstack.us-east-2.amazonaws.com/optimized/2X/5/5249bad7f0bb536adceb8a9381c7366054546763_2_690x404.png">Ubuntus gnome-terminal</a> som jag hittade på Google. Jag valde att byta ut färgerna så att de skulle passa hemsidan (svart och grå) och flyttade på terminalens "nav buttons" till vänster. Bytte också dess knappars färger till röd, grön och blå (RGB). Jag behöll dock de avrundade kanterna. Loggan behövdes inte komprimeras då jag gjorde den i sådan lågupplösning som möjligt. Se också <code>/misc/logo.xcf</code> för bildkällan i GIMP.
+		<br>
+		Tweakade också lite färger och annat på hemsidan.
 		<br><br>
+		Här är en bild på loggan i GIMP:
+		<br>
+		<img class="webimg" src="img/logoingimp.png" alt="Website logo at 2020-12-17 but in GIMP">
+
+		<br>
 		Här är en bild på loggan:
 		<br>
 		<img class="webimg" style="background: none;" src="../img/logo.png" alt="Website logo at 2020-12-17">
 
-		<h2>4. Testning</h2>
+		<h4>2020-12-18 Utanför lektioner</h4>
+		Idag uppdaterade jag dokumentationen för <a href="#2020-12-17">gårdagens arbete</a>. Dessutom testade jag hemsidan idag. Se <a href="#testing">testningsdelen nedan</a>:
+
+		<h2 id="testing">4. Testning</h2>
 		<!-- Testa i Chrome + Firefox eller Safari (på både dator och mobil). Skiljer sig resultatet? Har du behövt anpassa ditt kod/innehåll efter de olika webbläsarna? Hur gick valideringen? Vad säger contrastchecker.com om text/bakgrundsfärg? -->
 
 		<h2>5. Utvärdering (skrivs i slutet av arbetet, innan inlämning)</h2>
