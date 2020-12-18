@@ -53,13 +53,15 @@ header {
 	align-items: center; 
 	width: 100%;
 	align-self: flex-start;
-	background: linear-gradient(#eeef, #fefefa);
+	background: linear-gradient(#eeef, var(--bg-color-transparent));
+	/* background: #fefefefe; */
+	/* background: var(--bg-color-transparent); */
 	backdrop-filter: blur(8px);
 	border-bottom: solid var(--border-color-transparent) 0.25rem;
 }
 
 header #header_logo {
-	width: 20rem;
+	width: 18rem;
 	height: auto;
 	margin: auto auto auto 2rem;	
 }
